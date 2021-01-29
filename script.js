@@ -115,11 +115,10 @@ empCard.forEach(element => {
         setTimeout(() => {
           document.getElementById(activeCardEl[0]).src = 'assets/emptyCard.png';
           document.getElementById(activeCardEl[1]).src = 'assets/emptyCard.png';
-
           activeCardEl = [];
           useCard = [];
           activeCard = 1;
-        }, 700);
+        }, 1000);
       } else {
         uniqueCard.push(...new Set(useCard));
         if (uniqueCard.length === 4) {
